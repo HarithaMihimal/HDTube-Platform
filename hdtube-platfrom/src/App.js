@@ -1,7 +1,7 @@
 import React from 'react'
 import {Routes,Route,BrowserRouter}from 'react-router-dom'
 import {Box} from '@mui/material'
-import {Navbar,Feed,VideoDetail,ChannelDetail,SearchFeed} from '../components/index'
+import {Navbar,Feed,VideoDetail,ChannelDetail,SearchFeed} from './components'
 
 
 
