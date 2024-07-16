@@ -2,7 +2,11 @@ import React from 'react'
 
 const SearchFeed = () => {
   return (
-    <div>SearchFeed</div>
+    <div>SearchFeed
+
+<h1></h1>
+    </div>
+    
   )
 }
 
