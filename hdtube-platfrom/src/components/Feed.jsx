@@ -4,7 +4,7 @@ import {Box,Stack,Typography} from '@mui/material'
 import Sidebar from './Sidebar'
 
 const Feed = () => {
-  
+  return(
     <Stack sx={{flexDirection:{sx:'column'
       ,md:'row'
     }}}>
@@ -20,7 +20,7 @@ const Feed = () => {
 
     </Stack>
 
-  
+  )
 }
 
 export default Feed
