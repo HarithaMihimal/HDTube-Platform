@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
 import {Box,Stack,Typography} from '@mui/material'
-import Sidebar from './Sidebar'
+import {Sidebar,Videos} from './'
 
 const Feed = () => {
   return(
@@ -28,7 +28,7 @@ height:'90vh', flex:2
             Videos
     </span>
     </Typography>
-
+<Videos videos={[]}/>
 </Box>
 
     </Stack>
