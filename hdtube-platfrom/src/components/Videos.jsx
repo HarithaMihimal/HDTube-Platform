@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Videos = () => {
+const Videos = ({Videos}) => {
+    console.log("Videos")
   return (
     <div>Videos</div>
   )
