@@ -20,7 +20,7 @@ fetchFromApi(`search?part=snippet&q=${selectedCategory}`)
     <Sidebar
     selectedCategory={selectedCategory}
     setSelectedCategory={setSelectedCategory}
-    
+
     />
     <Typography className='copyright'
     variant='body2' sx={{mt:1.5,color:'#fff'}}>
@@ -34,7 +34,7 @@ height:'90vh', flex:2
     fontWeight='bold' mb={2} sx={{
       color:'#fff'
     }}>
-      New
+      {selectedCategory}
     <span style={{color:'#F31503'}}>
             Videos
     </span>
