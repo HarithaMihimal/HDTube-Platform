@@ -1,9 +1,12 @@
 import React from 'react'
-
+import {Stack,Box} from '@mui/material'
 const Videos = ({Videos}) => {
     console.log("Videos")
   return (
-    <div>Videos</div>
+    <Stack>
+
+          
+    </Stack>
   )
 }
 
