@@ -34,7 +34,6 @@ const VideoCard = ({video:{id:{videoId},snippet}}) => {
         </Typography>
         </Link>
     </CardContent> 
-    </Card>
   )
 }
 
