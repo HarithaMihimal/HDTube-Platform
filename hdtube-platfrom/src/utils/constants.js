@@ -12,11 +12,11 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo = 'https://th.bing.com/th/id/R.4f1e9cf0527ed10b4a236db4c8b0c105?rik=6nxLL3%2fa6GOaoA&riu=http%3a%2f%2fwww.queerdates.de%2fimages%2fyoutube-logo.png&ehk=xZ4xoGW5WMAvuAf%2bsNn2RJ1CdBEWa8HdDRwWw2zwOFY%3d&risl=&pid=ImgRaw&r=0';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
-  { name: 'JS Mastery', icon: <CodeIcon />, },
+  { name: 'Tech Track', icon: <CodeIcon />, },
   { name: 'Coding', icon: <CodeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
   { name: 'NextJS', icon: <CodeIcon />, },
@@ -34,9 +34,9 @@ export const categories = [
   { name: 'Crypto', icon: <DeveloperModeIcon />, },
 ];
 
-export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
-export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
-export const demoVideoUrl = '/video/GDa8kZLNhJ4';
-export const demoChannelTitle = 'JavaScript Mastery';
+export const demoThumbnailUrl = 'https://th.bing.com/th/id/OIP.hzprKDu_pE_AELVJtrHJwQHaEI?w=250&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7';
+export const demoChannelUrl = '/channel/UCCF5Gw43fTP-hRa9Set136w';
+export const demoVideoUrl = '/video/PiRKvIwVz_k?si=6ix1XF5qVQpRNzjX';
+export const demoChannelTitle = 'Tech Track';
 export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
 export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'
