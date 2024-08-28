@@ -1,45 +1,36 @@
-import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
-import { Paper, IconButton } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import React from "react";
+import { Stack } from "@mui/material";
 
-const SearchBar = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const navigate = useNavigate();
+import { categories } from "../utils/constants";
 
-  const onhandleSubmit = (e) => {
-    e.preventDefault();
+const Categories = ({ selectedCategory, setSelectedCategory }) => (
+  <Stack
+    direction="row"
+    sx={{
+      overflowY: "auto",
+      height: { sx: "auto", md: "95%" },
+      flexDirection: { md: "column" },
+    }}
+  >
+    {categories.map((category) => (
+      <button
+        className="category-btn"
+        onClick={() => setSelectedCategory(category.name)}
+        style={{
+          background: category.name === selectedCategory && "#FC1503",
+          color: "white",
+        }}
+        key={category.name}
+      >
+        <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px" }}>
+          {category.icon}
+        </span>
+        <span style={{ opacity: category.name === selectedCategory ? "1" : "0.8" }}>
+          {category.name}
+        </span>
+      </button>
+    ))}
+  </Stack>
+);
 
-    if (searchTerm) {
-      navigate(`/search/${searchTerm}`);
-
-      setSearchTerm('');
-    }
-  };
-
-  return (
-    <Paper
-      component='form'
-      onSubmit={onhandleSubmit}
-      sx={{
-        borderRadius: 20,
-        border: '1px solid #e3e3e3',
-        pl: 2,
-        boxShadow: 'none',
-        mr: { sm: 5 },
-      }}
-    >
-      <input
-        className='search-bar'
-        placeholder='Search...'
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <IconButton type='submit' sx={{ p: '10px', color: 'red' }} aria-label='search'>
-        <SearchIcon />
-      </IconButton>
-    </Paper>
-  );
-};
-
-export default SearchBar;
+export default Categories;
